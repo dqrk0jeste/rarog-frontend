@@ -1,0 +1,17 @@
+* {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #FFFAE0;
+  --primary-color: #FFE03E;
+  --secondary-color: #202768;
+}
+
+
+body {
+  background-color: var(--background-color);
+}
