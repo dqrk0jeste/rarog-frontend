@@ -1,25 +1,58 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="body1">
-      <div class="strana">
-        <div class="sipof">
-          <div class="slika">
-            <img src="slika.svg">
-          </div>
-          <div class="podaci">
-            <p class="slova">naslov</p>
-            <p class="slova">pisac</p>
-            <p class="slova">godina prvog izdanja</p>
-            <p class="slova">žanr</p>
-          </div>
-        </div>
-      </div>
-    </div>
-      
-    
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rarog | Movies</title>
+  <link rel="stylesheet" type="text/css" href="../../shared/main.css">
+  <link rel="stylesheet" type="text/css" href="../../shared/blue-theme.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+  <div class="back">
+    <a href="/movies/" class="back-arrow">
+      <img src="./images/left-arrow.svg" alt="back arrow">
+    </a>
+  </div>
+  <div class="pattern before">
+    <div class="pattern-before"></div>
+    <div class="pattern-bg"></div>
+    <div class="pattern-after"></div>
+  </div>
+  <main id="tape">
+    <!-- this will be filled with server data -->
+  </main>
+  <div class="pattern after">
+    <div class="pattern-before"></div>
+    <div class="pattern-bg"></div>
+    <div class="pattern-after"></div>
+  </div>
+  <div class="actions">
+    <button>
+      <img src="./images/status.svg" alt="">
+      <span>Status</span>
+    </button>
+    <button id="rate">
+      <img src="./images/rate.svg" alt="">
+      <span>Rate</span>
+    </button>
+    <button id="favourite" class="favourite">
+      <img class="selected" src="./images/favourite-active.svg" alt="">
+      <img class="unselected" src="./images/favourite.svg" alt="">
+      <span>Favourite</span>
+    </button>
+    <button>
+      <img src="./images/share.svg" alt="">
+      <span>Share</span>
+    </button>
+  </div>
+  <div class="write-comment">
+    <div></div>
+    <input type="text" placeholder="Add comment">
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+
 </html>

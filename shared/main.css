@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 * {
   min-width: 0;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: none;
+  outline: none;
 }
 
 :root {
@@ -12,6 +16,7 @@
 body {
   max-width: var(--max-width);
   margin: auto;
+  font-family: 'Outfit', Arial;
 }
 
 a {

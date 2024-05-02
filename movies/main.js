@@ -31,3 +31,12 @@ function generateMovieUrl(id) {
 
 fetchMovies()
 
+const searchParamsButtons = document.querySelectorAll('.search-params button')
+searchParamsButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    searchParamsButtons.forEach(b => {
+      b.classList.remove('active')
+    })
+    button.classList.add('active')
+  })
+})

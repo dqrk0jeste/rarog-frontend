@@ -15,7 +15,7 @@ export default defineConfig({
         music: resolve(__dirname, 'music/index.html'),
         singleMusic: resolve(__dirname, 'music/single/index.html'),
         movie: resolve(__dirname, 'movies/index.html'),
-        singleMuvie: resolve(__dirname, 'movies/single/index.html'),
+        singleMovie: resolve(__dirname, 'movies/single/index.html'),
       },
     },
   },

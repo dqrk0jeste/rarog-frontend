@@ -1,36 +1,157 @@
-.body1{
-    background: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top:0;
-  }
-  .strana{
-    background: rgb(255, 250, 224);
-    width: 400px;
-    margin-top: 0;
-    top:0;
-    
-  }
-  .podaci{
-    flex: 1.2;
-    margin-left: 0;
-  
-  }
-  .sipof{
-    display: flex;
-    align-items: center;
-  }
-  .slika{
-    flex: 1;
-    margin-top: 20px;
-    margin-left: 25px;
-  }
-  .slova{
-    color: rgb(32, 39, 104);
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 18px;
-  }
+.back {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  padding: 0.25rem;
+}
+
+.pattern-bg {
+  background-color: var(--primary-color);
+  background-image: url('./images/pattern.svg');
+  height: 21px;
+  background-repeat: repeat-x;
+}
+
+.pattern-before {
+  height: 8px;
+  background-color: var(--primary-color);
+  margin-bottom: -1px;
+}
+
+.pattern-after {
+  height: 8px;
+  background-color: var(--primary-color);
+  margin-top: -1px;
+}
+
+.pattern.after {
+  margin-top: -1px;
+}
+
+.pattern.before {
+  margin-bottom: -1px;
+}
+
+main {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background-color: #7478A4;
+  min-height: 250px;
+  position: relative;
+}
+
+main .pin {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
+}
+
+main .cover {
+  width: 50%;
+  max-width: 180px;
+}
+
+main > div {
+  width: 50%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info * {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.actions {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.actions button {
+  width: 3.75rem;
+  aspect-ratio: 1;
+  border-radius: 1.25rem;
+  background-color: var(--darker-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.actions span {
+  position: absolute;
+  bottom: -1rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.favourite .unselected {
+  display: block;
+}
+
+.favourite .selected {
+  display: none;
+}
+
+.favourite.active .selected {
+  display: block;
+}
+
+.favourite.active .unselected {
+  display: none;
+}
+
+
+.write-comment {
+  padding: 0 1rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.write-comment > div {
+  width: 2.75rem;
+  aspect-ratio: 1;
+  border-radius: 99vw;
+  background-color: white;
+}
+
+.write-comment input {
+  border-radius: 0 99vw 99vw 99vw;
+  padding: 0.5rem 1.25rem;
+  font-size: 1.25rem;
+  color: white;
+  background-color: var(--darker-color);
+}
+
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: var(--grey-color);
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: var(--grey-color);
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: var(--grey-color);
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: var(--grey-color);
+}

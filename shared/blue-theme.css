@@ -1,0 +1,12 @@
+:root {
+  --background-color: #C8CAE0;
+  --primary-color: #414780;
+  --secondary-color: white;
+  --darker-color: #202768;
+  --grey-color: #C8CAE0;
+}
+
+
+body {
+  background-color: var(--background-color);
+}
