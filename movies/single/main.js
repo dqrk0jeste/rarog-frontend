@@ -17,7 +17,7 @@ async function fetchMovie() {
       <p>${ movie.media.releaseYear || '/'  }</p>
       <p>${ movie.media.genre || '/'  }</p>
     </div>
-    <img class="pin" src="./images/info.svg" alt="info">
+    <img class="pin" src="/info.svg" alt="info">
   `
 }
 
