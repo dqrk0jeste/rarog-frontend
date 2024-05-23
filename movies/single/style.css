@@ -95,22 +95,13 @@ main > div {
   font-weight: 500;
 }
 
-.favourite .unselected {
-  display: block;
-}
-
-.favourite .selected {
+.favourite > img{
   display: none;
 }
 
-.favourite.active .selected {
-  display: block;
+.favourite > img.active {
+  display: block; 
 }
-
-.favourite.active .unselected {
-  display: none;
-}
-
 
 .write-comment {
   padding: 0 1rem;

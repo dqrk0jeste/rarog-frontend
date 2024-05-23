@@ -39,7 +39,10 @@ searchParamsButtons.forEach(button => {
 })
 
 const favouriteButton = document.getElementById('favourite')
+const whiteHearth = document.getElementById('white-hearth')
+const redHearth = document.getElementById('red-hearth')
 favouriteButton.addEventListener('click', () => {
   // here should go the logic for sending the new state to server 
-  favouriteButton.classList.toggle('active')
+  whiteHearth.classList.toggle('active') 
+  redHearth.classList.toggle('active')
 })
