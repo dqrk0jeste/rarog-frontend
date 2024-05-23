@@ -11,26 +11,22 @@
 
 <body>
 	<div class="container">
-		<div class="circle">
-			<img src="./images/logo.png">
+		<div class="logo_pic">
+			<img src="../login/images/RAROG.svg">
 		</div>
+		<p style="color:#FFE03E">Just a few quick things to get you started</p>
 		<div class="signup_podaci">
 			<form id="signup-form">
-				<div class="RAROG-L">
-					<label>RAROG</label>
-				</div>
 				<br>
-				<label for="username" class="label">Username:</label>
-				<input type="text" id="username" name="username" required>
+				<input type="text" id="username" name="username" placeholder="Username" required>
 				<br>
-				<label for="password" class="label">Password:</label>
-				<input type="password" id="password" name="password" required>
+				<input type="password" id="password" name="password" placeholder="Password" required>
 				<br>
-				<label for="email" class="label">Email:</label>
-				<input type="email" id="email" name="email" required>
+				<input type="email" id="email" name="email" placeholder="E-mail" required>
 				<br>
-				<label for="city" class="label">City:</label>
-				<select id="city" name="city" required></select>
+				<select id="city" name="city" required>
+					<option value="" disabled selected>Location</option>
+				</select>
 				<br>
 				<div class="submit">
 					<button type="submit" id="submit">SIGN UP</button>
