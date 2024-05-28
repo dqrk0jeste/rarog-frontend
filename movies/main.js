@@ -1,7 +1,9 @@
 import { API, generateImageId } from '/utils/api'
+import { getUrlParam } from '/utils/url'
 
 async function fetchMovies() {
-  const res = await fetch(API + '/movie/')
+  const searchParam = getUrlParam('search') || '';
+  const res = await fetch(API + '/movie/?search='+searchParam)
   const movies = await res.json()
 
   const items = document.getElementById('items')
@@ -31,12 +33,18 @@ function generateMovieUrl(id) {
 
 fetchMovies()
 
-const searchParamsButtons = document.querySelectorAll('.search-params button')
-searchParamsButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    searchParamsButtons.forEach(b => {
-      b.classList.remove('active')
-    })
-    button.classList.add('active')
+const searchInput = document.getElementById('search-input')
+
+document.getElementById('search-button')
+  .addEventListener('click', () => {
+    if(searchInput.value !== '') {
+      location.assign('/movies/?search='+searchInput.value)
+    }
   })
-})
+
+document.getElementById('search-input')
+  .addEventListener('keypress', (e) => {
+    if(e.key === 'Enter' && searchInput.value !== '') {
+      location.assign('/movies/?search='+searchInput.value)
+    }
+  })
