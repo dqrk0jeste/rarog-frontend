@@ -4,26 +4,31 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Rarog | Sign Up</title>
+	<title>Rarog | Login</title>
 	<link rel="stylesheet" type="text/css" href="../shared/main.css">
 	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
 <body>
+	
 	<div class="container">
 		<div class="logo_pic">
-			<img src="../login/images/RAROG.svg">
+			<img src="./images/RAROG.svg">
 		</div>
-		<p style="color:#FFE03E">Just a few quick things to get you started</p>
-		<div class="signup_podaci">
+		<p style="color:#FFE03E" class="wb-text">Hello, welcome back</p>
+		<div class="login_podaci">
 			<form id="signup-form">
 				<br>
+				<label for="username" class="label"></label>
 				<input type="text" id="username" name="username" placeholder="Username" required>
 				<br>
+				<label for="password" class="label"></label>
 				<input type="password" id="password" name="password" placeholder="Password" required>
 				<br>
-				<input type="email" id="email" name="email" placeholder="E-mail" required>
+				<label for="email" class="label"></label>
+				<input type="text" id="email" name="email" placeholder="E-mail" required>
 				<br>
+				<label for="location" class="label"></label>
 				<select id="city" name="city" required>
 					<option value="" disabled selected>Location</option>
 				</select>
@@ -34,9 +39,11 @@
 				<br>
 			</form>
 		</div>
-		<div class="log-in">
-			<label id="have_account">Already have an account?</label>
-			<a href="/" class="login-link">Log in</a>
+		<div class="sing-up">
+			<p id="dont_have_account">
+				<p style="color:#FFE03E">Already have an account?</p>
+				<a href="../index.html" class="signup-link" style="color:#FF6209">Log in</a>
+			</p>
 		</div>
 	</div>
 	<script type="module" src="./main.js"></script>
