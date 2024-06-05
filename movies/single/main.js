@@ -1,3 +1,4 @@
+import { getUrlParam } from '/utils/url'
 import { API, generateImageId } from '/utils/api'
 
 async function fetchMovie() {
@@ -20,12 +21,6 @@ async function fetchMovie() {
     <img class="pin" src="/info.svg" alt="info">
   `
 }
-
-function getUrlParam(key) {
-  const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get(key);
-}
-
 fetchMovie()
 
 const searchParamsButtons = document.querySelectorAll('.search-params button')
